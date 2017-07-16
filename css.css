@@ -1,0 +1,58 @@
+body {
+	width: 800px;
+}
+#k1 {
+	width: 117px;
+	height: 156px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.k2 {
+	width: 400%;
+	height: 156px;
+	position: relative;
+	animation-name: lunbo ;
+	animation-duration: 20s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+ .k2 img {
+	width: 117px;
+	height: 156px;
+	float: left;
+}
+a {
+	position: absolute;
+	z-index: 10;
+	display: inline-block;
+	left: 370px;
+	top: 140px;
+    border-radius:100%;
+    background: #0936D4;
+    width:20px;height:20px;
+	line-height:25px;
+	 cursor:pointer;
+	color:#ffffff;
+	text-align:center;
+	opacity:0.5;
+}
+@keyframes lunbo {
+	0%,25%  {left:0px; top:0px;}
+	25%,50%  {left:-117px; top:0px;}
+	50%,75%  {left:-234px; top:0px;}
+	75%,100%  {left:-351px; top:0px;}
+}
+.color:hover {
+	background-color: #0CBF1A;
+}
+.color:hover,#k21:hover {
+	animation-play-state: paused;
+}
+#a:hover ~ #k21{animation: ma1 1s ease-out forwards;}  
+#b:hover ~ #k21{animation: ma2 1s ease-out forwards;}  
+#c:hover ~ #k21{animation: ma3 1s ease-out forwards;}  
+#d:hover ~ #k21{animation: ma4 1s ease-out forwards;}  
+        @keyframes ma1 {0%{margin-left:-351px;}100%{margin-left:-0px;} }  
+        @keyframes ma2 {0%{margin-left:-351px;}100%{margin-left:-234px;}   }  
+        @keyframes ma3 {100%{margin-left:-117px;}   }  
+        @keyframes ma4 {100%{margin-left:-351px;}   }  
